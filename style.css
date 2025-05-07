@@ -1,0 +1,502 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #111;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #c49a6c;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c49a6c;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.hero .btn:hover {
+  background-color: #a67b52;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #c49a6c;
+  margin: 80px 0 40px;
+}
+
+/* Menu Section */
+.menu {
+  padding: 0 40px 60px;
+  background-color: #1a1a1a;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: #eee;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: #333;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #c49a6c;
+  color: #000;
+}
+
+/* Price Badge */
+.price {
+  background-color: #c49a6c;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  margin-left: 8px;
+}
+
+/* Meal Plan Section */
+.meal-plan {
+  padding: 80px 40px;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.meal-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.meal-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #c49a6c;
+}
+
+.meal-card .price {
+  background-color: #c49a6c;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 40px;
+  background-color: #111;
+  color: #ddd;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #c49a6c;
+}
+
+/* Footer */
+.footer {
+  padding: 30px 20px;
+  background: #0d0d0d;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #c49a6c;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Management Page */
+.management {
+  padding: 80px 40px;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.team-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  margin-bottom: 5px;
+  color: #c49a6c;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Stylish Feedback Section */
+.feedback-section {
+  background: linear-gradient(135deg, #1c1c1c 0%, #111 100%);
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.feedback-card h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.feedback-card p {
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.styled-form .input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.styled-form input,
+.styled-form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #c49a6c;
+  padding: 12px 10px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.styled-form textarea {
+  resize: vertical;
+}
+
+.styled-form label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  color: #aaa;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.styled-form input:focus + label,
+.styled-form input:not(:placeholder-shown) + label,
+.styled-form textarea:focus + label,
+.styled-form textarea:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 0px;
+  font-size: 0.8rem;
+  color: #c49a6c;
+}
+
+.btn-submit {
+  background-color: #c49a6c;
+  color: #000;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #e6b675;
+}
+
+.thank-you-message {
+  display: none;
+  margin-top: 20px;
+  color: #c49a6c;
+  font-weight: 500;
+  font-size: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Pre-Order Button */
+.btn-order {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #c49a6c;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-order:hover {
+  background-color: #e5b77d;
+}
+
+/* PDF Download */
+.download-menu {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.btn-download {
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #c49a6c;
+  color: #000;
+}
+
+  

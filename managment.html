@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ngopi | Management</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" data-aos="fade-down">
+    <div class="logo">Ngopi</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="managment.html">Management</a>
+      <a href="menu.html">Menu</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <!-- Management Section -->
+  <section class="management">
+    <h2 class="section-title">Our Team</h2>
+    <div class="team-grid">
+      <div class="team-card" data-aos="flip-left">
+        <img src="https://futureoflife.org/wp-content/uploads/2020/08/elon_musk_royal_society.jpg" alt="Manager">
+        <h3>NIK Fadhlur Muiz</h3>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="team-card" data-aos="flip-left" data-aos-delay="100">
+        <img src="https://wellgroomedgentleman.com/wp-content/uploads/2023/10/Tony_Stark_Beard_with_Quiff_Hairstyle.width-800.jpg" alt="Operations">
+        <h3>Wan Muhammad Luqman</h3>
+        <p>Head of Operations</p>
+      </div>
+      <div class="team-card" data-aos="flip-left" data-aos-delay="200">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/62d599ede3ff49f348f9b9b4/0x0.jpg?format=jpg&crop=821,821,x155,y340,safe&height=416&width=416&fit=bounds" alt="Investor">
+        <h3>Tan Sri Tuan Muhammad Fakhrul Haikal</h3>
+        <p>Head Investor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <p>&copy; 2025 Ngopi. All rights reserved.</p>
+    <p>Follow us on 
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  </script>
+
+</body>
+</html>

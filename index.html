@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ngopi Landing Page</title>
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" data-aos="fade-down">
+    <div class="logo">Ngopi</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="managment.html">Management</a>
+      <a href="menu.html">Menu</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Ngopi Dulu, Biar Santai</h1>
+      <p>Brewing connections over a perfect cup</p>
+      <a href="menu.html" class="btn-order">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+<section class="menu" data-aos="fade-up">
+  <h2 class="section-title">Our Favorites</h2>
+  <div class="menu-grid">
+    <div class="menu-card" data-aos="zoom-in" data-aos-delay="100">
+      <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" alt="Coffee">
+      <h3>Espresso</h3>
+      <p>Strong and bold, made for serious coffee lovers.</p>
+    </div>
+    <div class="menu-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw2ca0aa66/images/recipe-Images/cafe-latte1-recipe.jpg?sw=1200&sh=1200&sm=fit" alt="Latte">
+      <h3>Latte</h3>
+      <p>Smooth blend of espresso and steamed milk.</p>
+    </div>
+    <div class="menu-card" data-aos="zoom-in" data-aos-delay="300">
+      <img src="https://ichef.bbc.co.uk/ace/standard/1600/food/recipes/the_perfect_mocha_coffee_29100_16x9.jpg.webp" alt="Mocha">
+      <h3>Mocha</h3>
+      <p>Espresso, chocolate, and milk – a sweet classic.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials" data-aos="fade-up">
+  <h2 class="section-title">What People Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial" data-aos="fade-right" data-aos-delay="100">
+      <p>“Best coffee shop in town. Great vibes and even better brews.”</p>
+      <span>- Sarah M.</span>
+    </div>
+    <div class="testimonial" data-aos="fade-left" data-aos-delay="200">
+      <p>“Love the mocha! Cozy place to work and chill.”</p>
+      <span>- Daniel W.</span>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" data-aos="fade-up">
+  <p>&copy; 2025 Ngopi. All rights reserved.</p>
+  <p>Follow us on 
+    <a href="#">Instagram</a> | 
+    <a href="#">Facebook</a>
+  </p>
+</footer>
+
+
+  <!-- AOS + Mobile Menu JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

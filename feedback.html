@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ngopi | Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" data-aos="fade-down">
+    <div class="logo">Ngopi</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="managment.html">Management</a>
+      <a href="menu.html">Menu</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Stylish Feedback Section -->
+  <section class="feedback-section" data-aos="zoom-in">
+    <div class="feedback-card">
+      <h2>Give Us Your Thoughts</h2>
+      <p>We value your feedback and want to serve you better.</p>
+      <form id="feedbackForm" class="styled-form">
+        <div class="input-group">
+          <input type="text" name="name" id="name" required />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" id="email" required />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="input-group">
+          <textarea name="message" id="message" rows="5" required></textarea>
+          <label for="message">Your Feedback</label>
+        </div>
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+      <div id="thankYou" class="thank-you-message">Thank you for your feedback! ☕</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <p>&copy; 2025 Ngopi. All rights reserved.</p>
+    <p>Follow us on <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById('cart-count').textContent =
+      JSON.parse(localStorage.getItem('ngopiCart'))?.length || 0;
+
+    document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("feedbackForm").reset();
+      document.getElementById("thankYou").style.display = "block";
+    });
+  </script>
+</body>
+</html>

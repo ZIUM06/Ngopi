@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ngopi | Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" data-aos="fade-down">
+    <div class="logo">Ngopi</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="managment.html">Management</a>
+      <a href="menu.html">Menu</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu" data-aos="fade-up">
+    <h2 class="section-title">Our Menu</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons" data-aos="fade-in">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="coffee">Coffee</button>
+      <button class="filter-btn" data-category="tea">Tea</button>
+      <button class="filter-btn" data-category="cold">Cold</button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-grid">
+      <div class="menu-card" data-category="coffee" data-aos="zoom-in">
+        <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" alt="Espresso">
+        <h3>Espresso <span class="price">RM 12.50</span></h3>
+        <p>Strong, classic and energizing.</p>
+        <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Espresso."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+      </div>
+      <div class="menu-card" data-category="coffee" data-aos="zoom-in">
+        <img src="https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw2ca0aa66/images/recipe-Images/cafe-latte1-recipe.jpg?sw=1200&sh=1200&sm=fit" alt="Latte">
+        <h3>Latte <span class="price">RM 10</span></h3>
+        <p>Creamy espresso with steamed milk.</p>
+        <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Latte."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+      </div>
+      <div class="menu-card" data-category="coffee" data-aos="zoom-in">
+        <img src="https://ichef.bbc.co.uk/ace/standard/1600/food/recipes/the_perfect_mocha_coffee_29100_16x9.jpg.webp" alt="Mocha">
+        <h3>Mocha <span class="price">RM 5.50</span></h3>
+        <p>Chocolate-infused coffee delight.</p>
+        <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Mocha."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+      </div>
+      <div class="menu-card" data-category="coffee" data-aos="zoom-in">
+        <img src="https://dolo.com.au/cdn/shop/articles/522979505-shutterstock_1973536478.jpg?v=1690528484" alt="Americano">
+        <h3>Americano <span class="price">RM 4.50</span></h3>
+        <p>Smooth and bold — pure coffee.</p>
+        <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Americano."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+      </div>
+      <div class="menu-card" data-category="cold" data-aos="zoom-in">
+        <img src="https://www.mccormick.com/-/media/project/oneweb/mccormick-us/mccormick/recipe-categories/c/800x800/cinnamon_spiked_coffee_800x800.jpg?rev=f549bd46bf9442b1bd58e1f1041ef2d2&vd=20221208T230457Z&extension=webp&hash=4540BAD6349D0955FB02A92DA641EEFA" alt="Iced Coffee">
+        <h3>Iced Coffee <span class="price">RM 4.50</span></h3>
+        <p>Chilled and refreshing on warm days.</p>
+        <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Iced%20Cofee."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+      </div>
+      <div class="menu-card" data-category="tea" data-aos="zoom-in">
+        <img src="https://cdn.shopify.com/s/files/1/0573/3993/6868/files/Herbal_Tea_Chamomile.jpg?v=1663098431" alt="Herbal Tea">
+        <h3>Herbal Tea <span class="price">RM 5.60</span></h3>
+        <p>Relaxing and naturally soothing.</p>
+        <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Herbal%20Tea."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+      </div>
+</div> <!-- End of .menu-grid -->
+</section>
+
+<!-- Meal Plan Section -->
+<section class="meal-plan" data-aos="fade-up">
+  <h2 class="section-title">Meal Plans</h2>
+
+  <div class="meal-grid">
+    <!-- Breakfast -->
+    <div class="meal-card" data-aos="zoom-in">
+      <img src="https://as2.ftcdn.net/jpg/02/11/57/95/1000_F_211579565_OFSWyzBXzCmAQmiE1bhqLRWzdGvHgNTv.jpg" alt="Breakfast Set">
+      <h3>Breakfast Set</h3>
+      <p>
+        Termasuk: Espresso, Croissant dan Secawan Buah<br>
+        <span class="price">RM 23.30</span>
+      </p>
+      <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Breakfast%20Set."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+    </div>
+
+    <!-- Lunch -->
+    <div class="meal-card" data-aos="zoom-in" data-aos-delay="150">
+      <img src="https://i0.wp.com/www.feedyoursoul2.com/wp-content/uploads/2014/08/75-5001.jpg?ssl=1" alt="Lunch Combo">
+      <h3>Lunch Combo</h3>
+      <p>
+        Termasuk: Latte Ais, Sandwich Ayam dan Salad<br>
+        <span class="price">RM 15</span>
+      </p>
+      <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Lunch%20Combo."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+    </div>
+
+    <!-- Dinner -->
+    <div class="meal-card" data-aos="zoom-in" data-aos-delay="300">
+      <img src="https://www.twopurplefigs.com/wp-content/uploads/2016/06/Summer-Pasta-Salad-Platter-With-Sweet-Tea-Dressing-7.jpg" alt="Dinner Set">
+      <h3>Dinner Set</h3>
+      <p>
+        
+Termasuk: Teh Herba, Semangkuk Pasta dan Pencuci Mulut<br>
+        <span class="price">RM 25</span>
+      </p>
+      <a  href="https://wa.me/60197078180?text=Hi%20Ngopi!%20I%20want%20to%20pre-order%20the%20Dinner%20Set."  class="btn-order"  target="_blank">  Pre-Order via WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <p>&copy; 2025 Ngopi. All rights reserved.</p>
+    <p>Follow us on 
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Toggle Menu
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+
+    // Filter Logic
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const menuCards = document.querySelectorAll(".menu-card");
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        filterButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const category = btn.getAttribute("data-category");
+
+        menuCards.forEach(card => {
+          const cardCategory = card.getAttribute("data-category");
+          if (category === "all" || category === cardCategory) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
